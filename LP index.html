@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StronGrow</title>
+    <link rel="stylesheet" href="LP style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="header">
+        <img src="StronGrow Logo.png" alt="StronGrow Logo"/>
+    </header>
+
+    <div class="backgroundColour"></div>
+
+    <div class="overview" id=change>
+            <img src="LP pic.jpg" alt="weekly goals" class="image">
+            <h4>StronGrow.</h4>
+            <h5>A dedicated fitness companion service that is ready to take you to the next level!</h5>
+    </div>
+
+    <div class="sign-up">
+        <h1>Hello There!</h1>
+        <h3>Sign up for a specialised fitness program tailored to your needs!</h3>
+        <form>
+            Email Address</br>
+            <input type="email" name="email" placeholder="name@email.com"><br>
+            Confirm Email Address</br>
+            <input type="email" name="confirmEmail" placeholder="name@email.com"><br>
+            <input type="button" value="Continue" id="continue" onClick="location.href='S1 index.html'">
+        </form>
+        <h5>Already have an account?</h5>
+        <input type="button" value="Login" id="loginButton" onclick= "moveToLogin()">
+    </div>
+
+    <div class="login">
+        <h1>Welcome Back!</h1>
+        <h3>Login with your details.</h3>
+        <form>
+            Username</br>
+            <input type="input" name="username" placeholder="Username"><br>
+            Password</br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <input type="submit" value="Continue" id="continue">
+        </form>
+        <h5>Don't have an account?</h5>
+        <input type="button" value="Sign-Up" id="signupButton" onclick= "moveToSignup()">
+    </div>
+
+    <div class="footer"></div>
+
+
+    <script src="LP script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color: lightsteelblue;
+    font-family: 'Nunito Sans', sans-serif;
+    align-content: center;
+}
+
+.header img {
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+    padding-top: 1.5%;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-bottom: 1.5%;
+}
+
+.backgroundColour {
+    z-index: 0;
+    position: absolute;
+    max-width: 90%;
+    max-height: 65%;
+    width: 90%;
+    height: 65%;
+    border-radius: 50px;
+    background:rgb(223, 223, 223);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    width: 450px;
+    height: 380px;
+    border-radius: 10%;
+    max-width: 100%;
+    background-size: cover;
+  }
+  
+
+.login {
+    position: relative;
+    max-width: 40%;
+    max-height:60%;
+    width: 40%;
+    height: 60%;
+    z-index: 1;
+    float: left;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.sign-up {
+    position: relative;
+    z-index: 1;
+    float: left;
+    max-width: 40%;
+    max-height:60%;
+    width: 40%;
+    height: 60%;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 40px;
+
+}
+
+.overview {
+    position: absolute;
+    z-index: 4;
+    float: left;
+    max-width: 47.5%;
+    max-height: 65%;
+    width: 47.5%;
+    height: 65%;
+    display: block;
+    border-radius: 50px;
+    background:rgb(173, 173, 173);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+h5, h4{
+    z-index: 1;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input[type= input] {
+    z-index: 1;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type= email] {
+    z-index: 1;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type= password] {
+    z-index: 1;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+    z-index: 1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    background-color: #E64E4E;
+    color: white;
+    padding: 2%;
+    margin: 15px auto;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+input[type=submit] {
+    z-index: 1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    background-color: #E64E4E;
+    color: white;
+    padding: 2%;
+    margin: 15px auto;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  input[id=loginButton] {
+    z-index: 1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    background-color: lightsteelblue;
+    color: white;
+    padding: 2%; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  input[id=signupButton] {
+    z-index: 1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    background-color: lightsteelblue;
+    color: white;
+    padding-top: 2%; 
+    padding-bottom: 2%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover {
+    z-index: 1;
+    background-color: rgb(218, 44, 0);
+    transition: 0.5s;
+}
+
+input[type=button]:hover {
+    z-index: 1;
+    background-color: #E64E4E;
+    transition: 0.5s;
+}
+
+input[type=input]:focus {
+    z-index: 1;
+    border: 3px solid lightskyblue;
+    outline: none;
+    transition: 1s;
+}
+
+input[type=email]:focus {
+    z-index: 1;
+    border: 3px solid lightskyblue;
+    outline: none;
+    transition: 1s;
+}
+
+input[type=password]:focus {
+    z-index: 1;
+    border: 3px solid lightskyblue;
+    outline: none;
+    transition: 1s;
+}
+
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size:20px;
+    }
+    h4 {
+        font-size: 20px;
+        z-index: 1;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    h5 {
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    input[type=button] {
+        z-index: 1;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 55px;
+        background-color: #E64E4E;
+        color: white;
+        padding: 2%;
+        margin: 15px auto;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+    
+    input[type=submit] {
+        z-index: 1;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 55px;
+        background-color: #E64E4E;
+        color: white;
+        padding: 2%;
+        margin: 15px auto;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+    
+      input[id=loginButton] {
+        z-index: 1;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 55px;
+        background-color: lightsteelblue;
+        color: white;
+        padding: 2%; 
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+    
+      input[id=signupButton] {
+        z-index: 1;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 55px;
+        background-color: lightsteelblue;
+        color: white;
+        padding-top: 2%; 
+        padding-bottom: 2%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+
+      .image {
+        margin-top: 100%;
+        display: block;
+        width: 450px;
+        height: auto;
+        border-radius: 10%;
+        max-width: 100%;
+        background-size: cover;
+      }
+}

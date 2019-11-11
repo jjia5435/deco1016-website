@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StronGrow</title>
+    <link rel="stylesheet" href="S2 style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="StronGrow Logo Bottom.png" alt="StronGrow Logo"/>
+        <div class="steps">
+            <span class="stepA"> </span>
+            <span class="step1">2</span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </div>
+    </header>
+
+    <form class="infoForm">
+            <h1>Personal Information</h1>
+            Date of Birth:</br>
+            <input type="input" name="day" placeholder="DD" oninput="this.className = '' "> / 
+            <input type="input" name="month" placeholder="MM" oninput="this.className = '' "> / 
+            <input type="input" id="year" name="year" placeholder="YYYY" oninput="this.className = '' ">
+            <br></br>
+            Height (cm):        *Drag the Slider*
+            <div class="slider">
+                    <a href="#slide-1">1</a>
+                    <a href="#slide-2">2</a>
+                    <a href="#slide-3">3</a>
+                    <a href="#slide-4">4</a>
+                    <a href="#slide-5">5</a>
+                  
+                    <div class="slides">
+                      <div id="slide-1">
+                        less than 130cm
+                      </div>
+                      <div id="slide-2">
+                        130-150 cm
+                      </div>
+                      <div id="slide-3">
+                        150 - 170 cm
+                      </div>
+                      <div id="slide-4">
+                        170 - 190 cm
+                      </div>
+                      <div id="slide-5">
+                        more than 190cm
+                      </div>
+                    </div>
+                  </div><br>
+                  Weight (kg):</br>
+            <input type="number" name="weight" placeholder="Weight" oninput="this.className = '' ">  kg<br>
+            Gender:</br>
+            <label class="switch">
+                    <input type="checkbox">
+                    <span class="sliders round"></span>
+            </label>
+
+            <div style="overflow:auto;">
+                <a type="button" id="prevBtn" onclick="location.href='S1 index.html'">&#8249;</a>
+                <a type="button" id="nextBtn" onclick="location.href='S3 index.html'">&#8250;</a>
+            </div>
+    </form>
+
+    <script src="S1 script.js"></script>
+</body>
+
+</html>
